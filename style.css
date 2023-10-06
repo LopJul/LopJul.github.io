@@ -133,6 +133,15 @@ h2 {
   background-color: var(--white);
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 footer {
   margin-top: auto;
   background-color: var(--black);
