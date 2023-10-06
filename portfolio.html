@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="logo" href="index.html">JL</a>
+
+        <button id="button" type="button" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html">Etusivu</a>
+          </li>
+          <li class="navbar__item">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contact.html">Yhteydenotto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section section--primary">
+      <div class="container">
+        <h1>Portfolio</h1>
+        <p>
+          Tervetuloa portfoliooni! Täällä voit tutustua projekteihini ja nähdä,
+          mitä olen luonut Frontend kehittäjänä. Jokainen projekti on
+          mahdollisuus oppia ja kasvaa, ja olen ylpeä siitä, mitä olen
+          saavuttanut. Toivottavasti löydät inspiraatiota ja ideoita selaamalla
+          töitäni. Kiitos, että pysähdyit!
+        </p>
+
+        <a class="button" href="contact.html">Ota yhteyttä</a>
+      </div>
+    </section>
+
+    <div>
+      <section class="section project">
+        <div class="container">
+          <div class="row project__row">
+            <div class="col project__col">
+              <div
+                class="portfolio-image image-one"
+                role="img"
+                aria-label="Työ yksi"></div>
+            </div>
+
+            <div class="col project__col">
+              <h3>Työ 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                impedit atque eligendi asperiores ex ab tenetur nesciunt
+                maiores! Dolor beatae dolores incidunt necessitatibus id
+                officia, quam fuga! Accusamus, impedit sapiente.
+              </p>
+
+              <a class="button" href="#">Lue lisää</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project">
+        <div class="container">
+          <div class="row project__row">
+            <div class="col project__col">
+              <div
+                class="portfolio-image image-two"
+                role="img"
+                aria-label="Työ kaksi"></div>
+            </div>
+
+            <div class="col project__col">
+              <h3>Työ 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                impedit atque eligendi asperiores ex ab tenetur nesciunt
+                maiores! Dolor beatae dolores incidunt necessitatibus id
+                officia, quam fuga! Accusamus, impedit sapiente.
+              </p>
+
+              <a class="button" href="#">Lue lisää</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <span>&copy; 2023</span>
+      <span>Julia Loponen</span>
+    </footer>
+
+    <script>
+      var navbarButton = document.getElementById("button");
+      var navbar = document.getElementById("navbar");
+
+      navbarButton.addEventListener("click", () => {
+        navbar.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

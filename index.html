@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="logo" href="index.html">JL</a>
+
+        <button id="button" type="button" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html">Etusivu</a>
+          </li>
+          <li class="navbar__item">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contact.html">Yhteydenotto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section section--primary">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Heippa ja tervetuloa sivulleni!</h1>
+            <p>
+              Olen Julia, aloitteleva Frontend kehittäjä, joka työskentelee
+              innokkaasti HTML:n, CSS:n ja JavaScriptin parissa.
+            </p>
+
+            <a class="button" href="contact.html">Ota yhteyttä</a>
+          </div>
+
+          <div class="col image-center">
+            <div class="hero-image" role="img" aria-label="Julia"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col image-left">
+            <div
+              class="about-image"
+              role="img"
+              aria-label="Siveltimiä, joissa on maalia"></div>
+          </div>
+
+          <div class="col">
+            <h2>Tietoja minusta</h2>
+            <p>
+              Olen 28-vuotias aloitteleva Frontend kehittäjä, jolla on alle
+              vuoden kokemus alalta. Olen perehtynyt HTML:ään, CSS:ään ja
+              JavaScriptiin, ja olen erityisen kiinnostunut responsiivisesta
+              kehittämisestä sekä saavutettavuuden parantamisesta
+              verkkosivuilla. Tavoitteenani on luoda käyttäjäystävällisiä ja
+              esteettömämpiä sivustoja, jotka tarjoavat parhaan mahdollisen
+              käyttäjäkokemuksen. Olen innokas oppimaan ja kasvamaan, joten olen
+              valmis haasteisiin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--primary">
+      <div class="container">
+        <div class="row">
+          <div class="col image-left">
+            <div class="skills-image" role="img" aria-label="Taidot kuva"></div>
+          </div>
+
+          <div class="col">
+            <h2>Minun taitoni</h2>
+            <h3>Frontend Developer</h3>
+            <p>
+              Nautin koodaamisesta alusta alkaen ja siitä, miten ideat heräävät
+              eloon selaimessa. Rakastan luoda verkkosivuja tyhjästä,
+              hienosäätäen yksityiskohdat ja varmistaen, että lopputulos on
+              juuri sellainen kuin suunnittelin.
+            </p>
+
+            <ul class="skills__list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>&copy; 2023</span>
+      <span>Julia Loponen</span>
+    </footer>
+
+    <script>
+      var navbarButton = document.getElementById("button");
+      var navbar = document.getElementById("navbar");
+
+      navbarButton.addEventListener("click", () => {
+        navbar.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

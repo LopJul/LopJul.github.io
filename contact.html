@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="logo" href="index.html">JL</a>
+
+        <button id="button" type="button" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html">Etusivu</a>
+          </li>
+          <li class="navbar__item">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contact.html">Yhteydenotto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section section--primary">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Ota yhteyttä</h1>
+            <p>
+              Ota rohkeasti yhteyttä! Olen avoin uusille projekteille,
+              yhteistyölle ja keskusteluille. Olipa kyseessä sitten kysymys,
+              ehdotus tai yksinkertaisesti tervehdys, odotan innolla viestiäsi.
+              Yhdessä voimme luoda hienoja asioita!
+            </p>
+
+            <div class="contact-links">
+              <p>
+                Sähköposti:
+                <a class="link" href="mailto:julia.loponen@hotmail.fi">
+                  julia.loponen@hotmail.fi
+                </a>
+              </p>
+              <p><a class="link" href="#">LinkedIn</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>&copy; 2023</span>
+      <span>Julia Loponen</span>
+    </footer>
+
+    <script>
+      var navbarButton = document.getElementById("button");
+      var navbar = document.getElementById("navbar");
+
+      navbarButton.addEventListener("click", () => {
+        navbar.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
